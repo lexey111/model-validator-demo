@@ -1,0 +1,158 @@
+.validation-messages {
+	@apply flex flex-col w-full my-2;
+}
+
+.validation-messages .validation-message {
+	@apply flex flex-row py-1 px-2 rounded text-xs;
+	line-height: 21px;
+}
+
+.validation-messages.error .validation-message {
+	@apply text-red-600;
+}
+
+.validation-messages .validation-message::before {
+	content: "";
+	margin-right: .5rem;
+	font-size: 12px;
+	width: 21px;
+	height: 21px;
+	display: inline-flex;
+	@apply rounded-2xl items-center justify-center p-0 shadow;
+}
+
+.validation-messages.error .validation-message::before {
+	content: "!";
+	@apply bg-red-600 text-red-50 shadow-red-200;
+}
+
+.validation-messages.warning .validation-message {
+	@apply text-amber-600;
+}
+
+.validation-messages.warning .validation-message::before {
+	content: "i";
+	@apply font-serif bg-amber-600 text-amber-50 shadow-amber-200;
+}
+
+.validation-messages.notice .validation-message {
+	@apply text-blue-600;
+}
+
+.validation-messages.notice .validation-message::before {
+	content: "\2714";
+	@apply bg-blue-600 text-blue-50 shadow-blue-200;
+}
+
+input.validation-error {
+	@apply ring-2 ring-red-500 focus:outline-none focus:ring focus:ring-red-600 text-red-800;
+}
+
+input.validation-warning {
+	@apply ring-2 ring-amber-500 focus:outline-none focus:ring focus:ring-amber-600 text-amber-800;
+}
+
+input.validation-notice {
+	@apply ring-2 ring-blue-500 focus:outline-none focus:ring focus:ring-blue-600 text-blue-800;
+}
+
+input.validation-none {
+	@apply ring-2 ring-green-500 focus:outline-none focus:ring focus:ring-green-600 text-green-900;
+}
+
+/* validation with aggregate */
+
+.section-validation {
+	@apply border-2 border-transparent p-4 rounded-md transition-colors;
+}
+
+.section-validation.error {
+	@apply border-red-400 bg-red-100;
+}
+
+/* validation with tooltips */
+
+.field-with-tooltip {
+	@apply flex flex-row flex-nowrap items-center;
+}
+
+.validation-tooltip a {
+	width: 22px;
+	height: 22px;
+	@apply flex flex-row bg-slate-500 rounded-2xl ml-2 relative shadow;
+	@apply items-center content-center justify-center;
+	@apply text-xs text-white text-center p-0 font-bold;
+	@apply hover:no-underline;
+}
+
+.validation-tooltip a.with-number:before {
+	display: none;
+}
+
+.validation-tooltip ul {
+	list-style: disc;
+	@apply mx-2;
+}
+
+.validation-tooltip.error a {
+	@apply bg-red-600;
+}
+
+.validation-tooltip.warning a {
+	@apply bg-amber-500;
+}
+
+.validation-tooltip.notice a {
+	@apply bg-blue-500;
+}
+
+.validation-tooltip.ok a {
+	@apply bg-green-500;
+}
+
+.validation-tooltip a:before {
+	content: '!';
+	position: absolute;
+	display: inline-block;
+	text-align: center;
+	vertical-align: text-top;
+	color: white;
+	top: 50%;
+	left: 50%;
+	line-height: 15px;
+	font-weight: bold;
+	padding: 0;
+	margin: 0;
+	font-size: 15px;
+	width: 15px;
+	height: 15px;
+	transform: translateX(-50%) translateY(-50%);
+}
+
+.validation-tooltip.error a:before {
+	content: '+';
+	transform: translateX(-45%) translateY(-56%) rotate(45deg);
+}
+
+.validation-tooltip.warning a:before {
+	content: '!';
+}
+
+.validation-tooltip.notice a:before {
+	content: 'i';
+	font-style: italic;
+}
+
+.validation-tooltip.ok a:before {
+	content: '\2714';
+}
+
+button.title-action {
+	height: 36px;
+	min-width: 36px;
+	@apply text-sm px-4 bg-violet-500 text-white rounded-md;
+}
+
+button.title-action.danger {
+	@apply bg-red-500 px-0;
+}

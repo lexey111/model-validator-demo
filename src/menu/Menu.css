@@ -1,0 +1,35 @@
+.main-menu {
+	@apply h-full w-32 pr-4;
+	@apply text-indigo-50 text-xs;
+	@apply flex flex-col items-stretch;
+
+	@apply sm:text-xs;
+	@apply md:w-48 md:text-xs;
+	@apply lg:w-64 lg:text-base;
+	@apply xl:w-64 xl:text-base;
+	@apply 2xl:w-64 2xl:text-base;
+}
+
+.main-menu nav {
+	@apply w-full flex flex-col mr-4;
+}
+
+.main-menu nav a {
+	@apply w-full py-3 px-3 my-0.5 transition-all text-indigo-50 rounded-xl;
+	@apply hover:bg-indigo-600 hover:no-underline;
+	@apply focus:bg-indigo-600 focus:no-underline;
+}
+
+.main-menu nav a.active {
+	@apply bg-indigo-950 text-indigo-50;
+}
+
+.main-menu nav.examples a {
+	@apply text-yellow-300;
+	@apply hover:bg-indigo-600 hover:no-underline;
+	@apply focus:bg-indigo-900;
+}
+
+.main-menu nav.examples a.active {
+	@apply bg-yellow-400 text-yellow-900;
+}

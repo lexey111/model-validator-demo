@@ -1,0 +1,38 @@
+#root {
+	display: flex;
+	flex-flow: row nowrap;
+	margin: 0 auto;
+	position: relative;
+}
+
+.container {
+}
+
+.app-content {
+	@apply w-full p-4 block my-4;
+	@apply bg-white shadow-2xl shadow-blue-950;
+	@apply rounded-2xl;
+	@apply w-[400px];
+	@apply sm:w-[400px];
+	@apply md:w-[600px];
+	@apply lg:w-[700px];
+	@apply xl:w-[1000px];
+	@apply 2xl:w-[1200px];
+}
+
+.animate-fadein {
+	animation-name: fadein;
+	animation-duration: .5s;
+	transform-origin: top center;
+}
+
+@keyframes fadein {
+	0% {
+		opacity: 0;
+		transform: translateY(-10px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}

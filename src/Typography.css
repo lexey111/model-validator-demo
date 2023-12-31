@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+code.text {
+	@apply font-mono text-xs bg-blend-darken bg-slate-400 text-slate-50 rounded py-1 px-2;
+}
+
+pre {
+	@apply w-full font-mono text-xs leading-5 text-clip;
+	@apply focus:outline-none;
+	overflow-x: hidden;
+}
+
+pre.prism {
+	background: transparent !important;
+	@apply text-xs;
+}
+
+pre.prism * {
+	background: transparent !important;
+}
+
+a {
+	@apply text-blue-500 transition-colors;
+	@apply hover:text-blue-700 hover:underline;
+	@apply focus:text-blue-700 focus:underline;
+}
+
+.description {
+	@apply bg-cyan-100 mt-4 w-full p-4 rounded shadow;
+}
+
+ul {
+	list-style: disc;
+	@apply ml-6 text-sm;
+}
+
+ul li {
+	@apply my-2;
+}
+
+p {
+	@apply leading-6 my-2 text-sm;
+}
