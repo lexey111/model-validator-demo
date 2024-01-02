@@ -6,7 +6,7 @@ This is a demo project for `lx-model-validator`:
 * [NPM](https://www.npmjs.com/package/lx-model-validator)
 * [GitHub, React bindings](https://github.com/lexey111/model-validator-react)
 * [NPM, React bindings](https://www.npmjs.com/package/lx-model-validator-react)
-* [Medium Article](https://medium.com/p/814b2dff65e8)
+* [Medium article](https://lexeykoshkin.medium.com/model-validation-814b2dff65e8)
 
 ### Local installation
 

@@ -31,8 +31,9 @@ export const Home: React.FC = () => {
 		</p>
 
 		<p className={'bg-fuchsia-500 text-white p-4 rounded-xl my-4'}>
-			Read more on <a href="https://medium.com/p/814b2dff65e8" target={'_blank'} className={'underline text-fuchsia-100 hover:text-fuchsia-200'}>Medium</a>.
+			Read more on <a href="https://lexeykoshkin.medium.com/model-validation-814b2dff65e8" target={'_blank'} className={'underline text-fuchsia-100 hover:text-fuchsia-200'}>Medium</a>.
 		</p>
+
 
 		<p className={'mb-8'}>
 			Resources:
