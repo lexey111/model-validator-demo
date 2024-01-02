@@ -9,9 +9,9 @@ import {
 	ValidatorStringContains,
 	ValidatorStringLength,
 	ValidatorStringRequired
-} from 'model-validator';
+} from 'lx-model-validator';
 
-import {ValidationTooltipComponent} from 'model-validator-react';
+import {ValidationTooltipComponent} from 'lx-model-validator-react';
 import {Tooltip} from "react-tooltip";
 import {Switch} from "@headlessui/react";
 
@@ -345,7 +345,7 @@ export const FormTooltips: React.FC = () => {
 			</p>
 
 			<p className="mt-4">
-				<a href="#" target="_blank">Github page</a> of this example.
+				<a href="https://github.com/lexey111/model-validator-demo/blob/main/src/pages/form-tooltips.page.tsx" target="_blank">Github page</a> of this example.
 			</p>
 		</div>
 

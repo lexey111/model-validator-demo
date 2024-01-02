@@ -12,6 +12,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "lx-model-validator": "^1.0.0",
+    "lx-model-validator-react": "^1.0.1",
     "mobx": "^6.12.0",
     "mobx-react-lite": "^4.0.5",
     "react": "^18.2.0",

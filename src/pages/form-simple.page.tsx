@@ -9,14 +9,14 @@ import {
 	ValidatorStringContains,
 	ValidatorStringLength,
 	ValidatorStringRequired
-} from 'model-validator';
+} from 'lx-model-validator';
 
 import {
 	ValidationAnyMessageComponent,
 	ValidationMessageComponent,
 	ValidationNoticeMessageComponent,
 	ValidationWarningMessageComponent
-} from 'model-validator-react';
+} from 'lx-model-validator-react';
 
 const UserValidation: TValidationModel = {
 	'name': {
@@ -257,7 +257,7 @@ export const FormSimple: React.FC = () => {
 				</li>
 			</ul>
 			<p className="mt-4">
-				<a href="#" target="_blank">Github page</a> of this example.
+				<a href="https://github.com/lexey111/model-validator-demo/blob/main/src/pages/form-simple.page.tsx" target="_blank">Github page</a> of this example.
 			</p>
 		</div>
 

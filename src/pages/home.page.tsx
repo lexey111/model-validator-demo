@@ -30,8 +30,8 @@ export const Home: React.FC = () => {
 			The Model Validator itself is framework independent, but together with React it can be very handy to use.
 		</p>
 
-		<p className={'bg-indigo-500 text-indigo-50 p-4 rounded-xl my-4'}>
-			Read more on <a href="" target={'_blank'} className={'underline text-indigo-100 hover:text-indigo-200'}>Medium</a>.
+		<p className={'bg-fuchsia-500 text-white p-4 rounded-xl my-4'}>
+			Read more on <a href="https://medium.com/p/814b2dff65e8" target={'_blank'} className={'underline text-fuchsia-100 hover:text-fuchsia-200'}>Medium</a>.
 		</p>
 
 		<p className={'mb-8'}>
@@ -40,19 +40,19 @@ export const Home: React.FC = () => {
 
 		<ul className={'ml-8'}>
 			<li>
-				<a href="" target={'_blank'}>Model Validator Github</a>
+				<a href="https://github.com/lexey111/model-validator" target={'_blank'}>Model Validator Github</a>
 			</li>
 			<li>
-				<a href="" target={'_blank'}>Model Validator NPM</a>
+				<a href="https://www.npmjs.com/package/lx-model-validator" target={'_blank'}>Model Validator NPM</a>
 			</li>
 			<li>
-				<a href="" target={'_blank'}>Model Validator - React bindings Github</a>
+				<a href="https://github.com/lexey111/model-validator-react" target={'_blank'}>Model Validator - React bindings Github</a>
 			</li>
 			<li>
-				<a href="" target={'_blank'}>Model Validator - React bindings NPM</a>
+				<a href="https://www.npmjs.com/package/lx-model-validator-react" target={'_blank'}>Model Validator - React bindings NPM</a>
 			</li>
 			<li>
-				<a href="" target={'_blank'}>This demo App Github</a>
+				<a href="https://github.com/lexey111/model-validator-demo" target={'_blank'}>This demo App Github</a>
 			</li>
 		</ul>
 

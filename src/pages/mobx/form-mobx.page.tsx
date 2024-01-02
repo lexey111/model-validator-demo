@@ -1,12 +1,12 @@
 import {useCallback, useEffect} from "react";
 
-import {getValidationClass, hasErrors} from 'model-validator';
+import {getValidationClass, hasErrors} from 'lx-model-validator';
 
 import {
 	ValidationMessageComponent,
 	ValidationNoticeMessageComponent,
 	ValidationWarningMessageComponent
-} from 'model-validator-react';
+} from 'lx-model-validator-react';
 import {observer} from "mobx-react-lite";
 import {UserStore} from "./form-mobx.storage.ts";
 
@@ -147,7 +147,10 @@ export const FormMobx: React.FC = observer(() => {
 				validation is going on, etc.
 			</p>
 			<p className="mt-4">
-				<a href="#" target="_blank">Github page</a> of this example. <a href="#" target="_blank">Page</a> of
+				<a href="https://github.com/lexey111/model-validator-demo/blob/main/src/pages/mobx/form-mobx.page.tsx"
+				   target="_blank">Github page</a> of this example. <a
+				href="https://github.com/lexey111/model-validator-demo/blob/main/src/pages/mobx/form-mobx.storage.ts"
+				target="_blank">Page</a> of
 				MobX Store for this example.
 			</p>
 		</div>

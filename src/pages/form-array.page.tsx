@@ -11,9 +11,9 @@ import {
 	ValidatorStringContains,
 	ValidatorStringLength,
 	ValidatorStringRequired
-} from 'model-validator';
+} from 'lx-model-validator';
 
-import { ValidationMessageComponent} from 'model-validator-react';
+import { ValidationMessageComponent} from 'lx-model-validator-react';
 
 const UserValidation: TValidationModel = {
 	'name': {
@@ -283,7 +283,7 @@ export const FormArray: React.FC = () => {
 				</li>
 			</ul>
 			<p className="mt-4">
-				<a href="#" target="_blank">Github page</a> of this example.
+				<a href="https://github.com/lexey111/model-validator-demo/blob/main/src/pages/form-array.page.tsx" target="_blank">Github page</a> of this example.
 			</p>
 		</div>
 

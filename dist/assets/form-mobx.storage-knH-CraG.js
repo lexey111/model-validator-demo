@@ -1,4 +1,4 @@
-import {makeObservable, observable, reaction} from "mobx";
+const a=`import {makeObservable, observable, reaction} from "mobx";
 import {
 	TValidationModel,
 	TValidationResult,
@@ -64,3 +64,4 @@ reaction(
 	}, () => {
 		UserStore.validationResult = ValidationEngine.validate(UserStore, UserValidation);
 	});
+`;export{a as default};
